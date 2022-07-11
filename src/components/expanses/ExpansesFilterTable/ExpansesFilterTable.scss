@@ -1,0 +1,13 @@
+.total-amount {
+	font-size: 1.6rem;
+	font-weight: 700;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	span {
+		&:not(:last-of-type) {
+			padding-right: 8rem;
+		}
+	}
+}
