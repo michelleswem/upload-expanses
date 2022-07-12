@@ -54,7 +54,7 @@ export const ExpansesFilterTable: React.FC = () => {
 				</tbody>
 			</table>
 			<p className='total-amount'>
-				<span>Total:</span>
+				<span>Total</span>
 				<span>{`${totalAmount.toFixed(2)}€`}</span>
 			</p>
 		</div>
