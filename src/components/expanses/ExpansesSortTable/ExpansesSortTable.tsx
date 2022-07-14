@@ -1,9 +1,11 @@
-import { useContext, useState } from 'react';
-import { ExpanseContext } from '../../../store/expanses-context';
+import { useState } from 'react';
 import { ButtonSort } from '../../ui/ButtonSort';
 import { ArrowIcon } from '../../../assets/icons/ArrowIcon';
 import { Expanse } from '../../../models/expanse';
 
+type ExpansesSortProps = {
+	expanses: Expanse[];
+};
 type SortOrder = 'asc' | 'dec';
 type Data = Expanse[];
 type SortKey = keyof Data[0];
@@ -43,14 +45,15 @@ const sortExpanses = (
 		}
 	});
 };
-export const ExpansesSortTable: React.FC = () => {
-	const expanseCtx = useContext(ExpanseContext);
+export const ExpansesSortTable: React.FC<ExpansesSortProps> = ({
+	expanses,
+}) => {
 	const [sortKey, setSortKey] = useState<SortKey>('id');
 	const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
 
 	const isAscending = sortOrder === 'asc';
 
-	const sortedData = sortExpanses(expanseCtx.items, sortKey, isAscending);
+	const sortedData = sortExpanses(expanses, sortKey, isAscending);
 
 	const sortExpansesHandler = (header: SortKey) => {
 		setSortOrder(sortOrder === 'asc' ? 'dec' : 'asc');

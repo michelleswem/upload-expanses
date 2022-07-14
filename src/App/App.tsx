@@ -1,14 +1,12 @@
 import React from 'react';
 import { Layout } from '../components/layout';
-import { ExpanseContextProvider } from '../store/expanses-context';
 import { Expanses } from '../components/expanses/Expenses';
+import expansesData from '../mocks/expansesData.json';
 
 export const App: React.FC = () => {
 	return (
-		<ExpanseContextProvider>
-			<Layout>
-				<Expanses />
-			</Layout>
-		</ExpanseContextProvider>
+		<Layout>
+			<Expanses expanses={expansesData} />
+		</Layout>
 	);
 };

@@ -4,17 +4,21 @@ import tab from '../../../mocks/tab.json';
 import { useTab } from '../../../hooks/useTab';
 import './Expanses.scss';
 import { ExpansesFilterTable } from '../ExpansesFilterTable';
+import { Expanse } from '../../../models/expanse';
+export type ExpansesProps = {
+	expanses: Expanse[];
+};
 
-export const Expanses: React.FC = () => {
+export const Expanses: React.FC<ExpansesProps> = ({ expanses }) => {
 	const { activeTab: active, changeTabHandler: changeTabsHandler } = useTab(
 		tab[0].id
 	);
 	let content = <p>No Content</p>;
 	if (active === tab[0].id) {
-		content = <ExpansesSortTable />;
+		content = <ExpansesSortTable expanses={expanses} />;
 	}
 	if (active === tab[1].id) {
-		content = <ExpansesFilterTable />;
+		content = <ExpansesFilterTable expanses={expanses} />;
 	}
 
 	return (

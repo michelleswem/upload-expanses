@@ -1,11 +1,12 @@
-import React, { useContext, useState, useMemo } from 'react';
-import { ExpanseContext } from '../../../store/expanses-context';
+import React, { useState, useMemo } from 'react';
 import { ExpansesSelect } from '../ExpansesSelect';
 import { Expanse } from '../../../models/expanse';
 import './ExpansesFilterTable.scss';
-
 type Data = Expanse[];
 type SelectKey = keyof Data[0];
+type ExpansesFilterProps = {
+	expanses: Expanse[];
+};
 const groupAndSumAmountBy = (
 	field: SelectKey,
 	items: Data
@@ -18,9 +19,9 @@ const groupAndSumAmountBy = (
 	}, {} as Record<string, number>);
 };
 
-export const ExpansesFilterTable: React.FC = () => {
-	const expCtx = useContext(ExpanseContext);
-
+export const ExpansesFilterTable: React.FC<ExpansesFilterProps> = ({
+	expanses,
+}) => {
 	const [filterExpanse, setFilterExpanse] = useState<SelectKey>('departments');
 
 	const filterChangeHandler = (select: SelectKey) => {
@@ -28,8 +29,8 @@ export const ExpansesFilterTable: React.FC = () => {
 	};
 
 	const result = useMemo(
-		() => groupAndSumAmountBy(filterExpanse, expCtx.items),
-		[filterExpanse, expCtx.items]
+		() => groupAndSumAmountBy(filterExpanse, expanses),
+		[filterExpanse, expanses]
 	);
 
 	const totalAmount = Object.values(result).reduce(
