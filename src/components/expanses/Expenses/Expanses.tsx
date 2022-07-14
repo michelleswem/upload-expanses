@@ -5,10 +5,15 @@ import { useTab } from '../../../hooks/useTab';
 import './Expanses.scss';
 import { ExpansesFilterTable } from '../ExpansesFilterTable';
 import { Expanse } from '../../../models/expanse';
+
 export type ExpansesProps = {
 	expanses: Expanse[];
 };
-
+type Tab = {
+	id: string;
+	title: string;
+};
+const tabData: Tab[] = tab;
 export const Expanses: React.FC<ExpansesProps> = ({ expanses }) => {
 	const { activeTab: active, changeTabHandler: changeTabsHandler } = useTab(
 		tab[0].id
@@ -25,7 +30,7 @@ export const Expanses: React.FC<ExpansesProps> = ({ expanses }) => {
 		<Fragment>
 			<div className='tab'>
 				<ul className='tab__list'>
-					{tab.map((tab) => (
+					{tabData.map((tab) => (
 						<li
 							className={active === tab.id ? 'tab__item' : ''}
 							key={tab.id}
