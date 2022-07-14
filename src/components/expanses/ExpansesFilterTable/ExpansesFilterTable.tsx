@@ -6,8 +6,10 @@ import './ExpansesFilterTable.scss';
 
 type Data = Expanse[];
 type SelectKey = keyof Data[0];
-
-let groupAndSumAmountBy = (field: SelectKey, items: Data) => {
+const groupAndSumAmountBy = (
+	field: SelectKey,
+	items: Data
+): Record<string, number> => {
 	return items.reduce((group, curItem) => {
 		let fieldValue = curItem[field];
 		if (!fieldValue) return group;
@@ -27,7 +29,7 @@ export const ExpansesFilterTable: React.FC = () => {
 
 	const result = useMemo(
 		() => groupAndSumAmountBy(filterExpanse, expCtx.items),
-		[filterExpanse, expCtx]
+		[filterExpanse, expCtx.items]
 	);
 
 	const totalAmount = Object.values(result).reduce(

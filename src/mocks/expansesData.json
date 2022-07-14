@@ -5,7 +5,7 @@
 		"projectName": "Gaama",
 		"amount": 1200,
 		"date": "2021-02-10",
-		"memberName": "sam"
+		"memberName": "Sam"
 	},
 	{
 		"id": "e2",
@@ -13,7 +13,7 @@
 		"projectName": "Mars-NS1",
 		"amount": 1400,
 		"date": "2021-04-02",
-		"memberName": "sam"
+		"memberName": "Sam"
 	},
 	{
 		"id": "e3",
@@ -29,7 +29,7 @@
 		"projectName": "Mars-NS1",
 		"amount": 1823,
 		"date": "2021-10-05",
-		"memberName": "sam"
+		"memberName": "Sam"
 	},
 	{
 		"id": "e5",
@@ -75,7 +75,7 @@
 		"id": "e10",
 		"departments": "Sales",
 		"projectName": "AlphaDeo",
-		"amount": 2237,
+		"amount": 2234,
 		"date": "2021-17-04",
 		"memberName": "Ann"
 	},
