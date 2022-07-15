@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 import { ButtonSort } from '../../ui/ButtonSort';
 import { ArrowIcon } from '../../../assets/icons/ArrowIcon';
 import { Expanse } from '../../../models/expanse';
@@ -49,11 +49,14 @@ export const ExpansesSortTable: React.FC<ExpansesSortProps> = ({
 	expanses,
 }) => {
 	const [sortKey, setSortKey] = useState<SortKey>('id');
+
 	const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
 
 	const isAscending = sortOrder === 'asc';
 
-	const sortedData = sortExpanses(expanses, sortKey, isAscending);
+	const sortedData = useMemo(() => {
+		return sortExpanses(expanses, sortKey, isAscending);
+	}, [expanses, sortKey, isAscending]);
 
 	const sortExpansesHandler = (header: SortKey) => {
 		setSortOrder(sortOrder === 'asc' ? 'dec' : 'asc');
