@@ -1,11 +1,9 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useContext, useMemo, useState } from 'react';
 import { ButtonSort } from '../../ui/ButtonSort';
 import { ArrowIcon } from '../../../assets/icons/ArrowIcon';
 import { Expanse } from '../../../models/expanse';
+import { ExpanseContext } from '../../../store/expanses-context';
 
-type ExpansesSortProps = {
-	expanses: Expanse[];
-};
 type SortOrder = 'asc' | 'dec';
 type Data = Expanse[];
 type SortKey = keyof Data[0];
@@ -45,18 +43,17 @@ const sortExpanses = (
 		}
 	});
 };
-export const ExpansesSortTable: React.FC<ExpansesSortProps> = ({
-	expanses,
-}) => {
+export const ExpansesSortTable: React.FC = () => {
 	const [sortKey, setSortKey] = useState<SortKey>('id');
 
 	const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
+	const { items } = useContext(ExpanseContext);
 
 	const isAscending = sortOrder === 'asc';
 
 	const sortedData = useMemo(() => {
-		return sortExpanses(expanses, sortKey, isAscending);
-	}, [expanses, sortKey, isAscending]);
+		return sortExpanses(items, sortKey, isAscending);
+	}, [items, sortKey, isAscending]);
 
 	const sortExpansesHandler = (header: SortKey) => {
 		setSortOrder(sortOrder === 'asc' ? 'dec' : 'asc');
