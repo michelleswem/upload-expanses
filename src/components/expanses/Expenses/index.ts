@@ -1,1 +1,1 @@
-export {Expanses } from './Expanses'
+export { Expanses } from "./Expanses";

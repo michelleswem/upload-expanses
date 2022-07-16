@@ -1,10 +1,10 @@
 [
-	{
-		"id": "taba",
-		"title": "sort-view"
-	},
-	{
-		"id": "tabb",
-		"title": "filter-view"
-	}
+  {
+    "id": "taba",
+    "title": "sort-view"
+  },
+  {
+    "id": "tabb",
+    "title": "filter-view"
+  }
 ]

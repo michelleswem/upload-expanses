@@ -11,7 +11,7 @@ const groupAndSumAmountBy = (
 	items: Data
 ): Record<string, number> => {
 	return items.reduce((group, curItem) => {
-		let fieldValue = curItem[field];
+		const fieldValue = curItem[field];
 		if (!fieldValue) return group;
 		group[fieldValue] = (group[fieldValue] || 0) + curItem.amount;
 		return group;

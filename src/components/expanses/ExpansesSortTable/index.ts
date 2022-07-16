@@ -1,1 +1,1 @@
-export { ExpansesSortTable } from './ExpansesSortTable';
+export { ExpansesSortTable } from "./ExpansesSortTable";

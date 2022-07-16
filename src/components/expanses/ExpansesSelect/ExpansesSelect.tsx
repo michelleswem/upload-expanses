@@ -1,3 +1,4 @@
+import React from 'react';
 import { Expanse } from '../../../models/expanse';
 import './ExpansesSelect.scss';
 type Data = Expanse[];

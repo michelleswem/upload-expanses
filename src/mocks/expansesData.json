@@ -1,204 +1,204 @@
 [
-	{
-		"id": "e1",
-		"departments": "IT",
-		"projectName": "Gaama",
-		"amount": 1200,
-		"date": "2021-02-10",
-		"memberName": "Sam"
-	},
-	{
-		"id": "e2",
-		"departments": "IT",
-		"projectName": "Mars-NS1",
-		"amount": 1400,
-		"date": "2021-04-02",
-		"memberName": "Sam"
-	},
-	{
-		"id": "e3",
-		"departments": "IT",
-		"projectName": "Asterin",
-		"amount": 800,
-		"date": "2021-08-03",
-		"memberName": "George"
-	},
-	{
-		"id": "e4",
-		"departments": "HR",
-		"projectName": "Mars-NS1",
-		"amount": 1823,
-		"date": "2021-10-05",
-		"memberName": "Sam"
-	},
-	{
-		"id": "e5",
-		"departments": "HR",
-		"projectName": "AlphaDeo",
-		"amount": 2839,
-		"date": "2021-23-05",
-		"memberName": "Matt"
-	},
-	{
-		"id": "e6",
-		"departments": "HR",
-		"projectName": "Gaama",
-		"amount": 210,
-		"date": "2021-02-03",
-		"memberName": "Matt"
-	},
-	{
-		"id": "e7",
-		"departments": "HR",
-		"projectName": "Mars-NS1",
-		"amount": 720,
-		"date": "2021-01-03",
-		"memberName": "Jennifer"
-	},
-	{
-		"id": "e8",
-		"departments": "HR",
-		"projectName": "Alph-23",
-		"amount": 929,
-		"date": "2021-05-11",
-		"memberName": "Sam"
-	},
-	{
-		"id": "e9",
-		"departments": "Sales",
-		"projectName": "AlphaDeo",
-		"amount": 2237,
-		"date": "2021-17-04",
-		"memberName": "Ann"
-	},
-	{
-		"id": "e10",
-		"departments": "Sales",
-		"projectName": "AlphaDeo",
-		"amount": 2234,
-		"date": "2021-17-04",
-		"memberName": "Ann"
-	},
+  {
+    "id": "e1",
+    "departments": "IT",
+    "projectName": "Gaama",
+    "amount": 1200,
+    "date": "2021-02-10",
+    "memberName": "Sam"
+  },
+  {
+    "id": "e2",
+    "departments": "IT",
+    "projectName": "Mars-NS1",
+    "amount": 1400,
+    "date": "2021-04-02",
+    "memberName": "Sam"
+  },
+  {
+    "id": "e3",
+    "departments": "IT",
+    "projectName": "Asterin",
+    "amount": 800,
+    "date": "2021-08-03",
+    "memberName": "George"
+  },
+  {
+    "id": "e4",
+    "departments": "HR",
+    "projectName": "Mars-NS1",
+    "amount": 1823,
+    "date": "2021-10-05",
+    "memberName": "Sam"
+  },
+  {
+    "id": "e5",
+    "departments": "HR",
+    "projectName": "AlphaDeo",
+    "amount": 2839,
+    "date": "2021-23-05",
+    "memberName": "Matt"
+  },
+  {
+    "id": "e6",
+    "departments": "HR",
+    "projectName": "Gaama",
+    "amount": 210,
+    "date": "2021-02-03",
+    "memberName": "Matt"
+  },
+  {
+    "id": "e7",
+    "departments": "HR",
+    "projectName": "Mars-NS1",
+    "amount": 720,
+    "date": "2021-01-03",
+    "memberName": "Jennifer"
+  },
+  {
+    "id": "e8",
+    "departments": "HR",
+    "projectName": "Alph-23",
+    "amount": 929,
+    "date": "2021-05-11",
+    "memberName": "Sam"
+  },
+  {
+    "id": "e9",
+    "departments": "Sales",
+    "projectName": "AlphaDeo",
+    "amount": 2237,
+    "date": "2021-17-04",
+    "memberName": "Ann"
+  },
+  {
+    "id": "e10",
+    "departments": "Sales",
+    "projectName": "AlphaDeo",
+    "amount": 2234,
+    "date": "2021-17-04",
+    "memberName": "Ann"
+  },
 
-	{
-		"id": "e11",
-		"departments": "Sales",
-		"projectName": "Asterin",
-		"amount": 5233,
-		"date": "2021-26-07",
-		"memberName": "George"
-	},
-	{
-		"id": "e12",
-		"departments": "Sales",
-		"projectName": "Gaama",
-		"amount": 9175,
-		"date": "2021-25-11",
-		"memberName": "Matt"
-	},
-	{
-		"id": "e13",
-		"departments": "Sales",
-		"projectName": "Alph-23",
-		"amount": 5528,
-		"date": "2021-25-11",
-		"memberName": "George"
-	},
-	{
-		"id": "e14",
-		"departments": "Sales",
-		"projectName": "Gaama",
-		"amount": 2204,
-		"date": "2021-19-05",
-		"memberName": "Jennifer"
-	},
+  {
+    "id": "e11",
+    "departments": "Sales",
+    "projectName": "Asterin",
+    "amount": 5233,
+    "date": "2021-26-07",
+    "memberName": "George"
+  },
+  {
+    "id": "e12",
+    "departments": "Sales",
+    "projectName": "Gaama",
+    "amount": 9175,
+    "date": "2021-25-11",
+    "memberName": "Matt"
+  },
+  {
+    "id": "e13",
+    "departments": "Sales",
+    "projectName": "Alph-23",
+    "amount": 5528,
+    "date": "2021-25-11",
+    "memberName": "George"
+  },
+  {
+    "id": "e14",
+    "departments": "Sales",
+    "projectName": "Gaama",
+    "amount": 2204,
+    "date": "2021-19-05",
+    "memberName": "Jennifer"
+  },
 
-	{
-		"id": "e15",
-		"departments": "Sales",
-		"projectName": "Gaama",
-		"amount": 9027,
-		"date": "2021-14-02",
-		"memberName": "George"
-	},
-	{
-		"id": "e16",
-		"departments": "Marketing",
-		"projectName": "Gaama",
-		"amount": 7811,
-		"date": "2021-30-09",
-		"memberName": "Matt"
-	},
-	{
-		"id": "e17",
-		"departments": "Marketing",
-		"projectName": "Asterin",
-		"amount": 3336,
-		"date": "2021-09-04",
-		"memberName": "Matt"
-	},
-	{
-		"id": "e18",
-		"departments": "Finance",
-		"projectName": "Asterin",
-		"amount": 5064,
-		"date": "2021-15-12",
-		"memberName": "George"
-	},
-	{
-		"id": "e19",
-		"departments": "Finance",
-		"projectName": "Gaama",
-		"amount": 3753,
-		"date": "2021-31-12",
-		"memberName": "Matt"
-	},
-	{
-		"id": "e20",
-		"departments": "Marketing",
-		"projectName": "Alph-23",
-		"amount": 1292,
-		"date": "2021-01-02",
-		"memberName": "George"
-	},
-	{
-		"id": "e21",
-		"departments": "Marketing",
-		"projectName": "AlphaDeo",
-		"amount": 3069,
-		"date": "2021-22-03",
-		"memberName": "Sam"
-	},
-	{
-		"id": "e22",
-		"departments": "Finance",
-		"projectName": "Alph-23",
-		"amount": 1292,
-		"date": "2021-01-02",
-		"memberName": "George"
-	},
-	{
-		"id": "e23",
-		"departments": "Finance",
-		"projectName": "Alph-23",
-		"amount": 1292,
-		"date": "2021-01-02",
-		"memberName": "George"
-	},
-	{
-		"id": "e24",
-		"departments": "Marketing",
-		"projectName": "Gaama",
-		"amount": 4639,
-		"date": "2021-01-02",
-		"memberName": "Sam"
-	},
-	{
-		"id": "e25",
-		"departments": "Marketing",
-		"projectName": "Alph-23",
-		"amount": 102,
-		"date": "2021-06-11",
-		"memberName": "Ann"
-	}
+  {
+    "id": "e15",
+    "departments": "Sales",
+    "projectName": "Gaama",
+    "amount": 9027,
+    "date": "2021-14-02",
+    "memberName": "George"
+  },
+  {
+    "id": "e16",
+    "departments": "Marketing",
+    "projectName": "Gaama",
+    "amount": 7811,
+    "date": "2021-30-09",
+    "memberName": "Matt"
+  },
+  {
+    "id": "e17",
+    "departments": "Marketing",
+    "projectName": "Asterin",
+    "amount": 3336,
+    "date": "2021-09-04",
+    "memberName": "Matt"
+  },
+  {
+    "id": "e18",
+    "departments": "Finance",
+    "projectName": "Asterin",
+    "amount": 5064,
+    "date": "2021-15-12",
+    "memberName": "George"
+  },
+  {
+    "id": "e19",
+    "departments": "Finance",
+    "projectName": "Gaama",
+    "amount": 3753,
+    "date": "2021-31-12",
+    "memberName": "Matt"
+  },
+  {
+    "id": "e20",
+    "departments": "Marketing",
+    "projectName": "Alph-23",
+    "amount": 1292,
+    "date": "2021-01-02",
+    "memberName": "George"
+  },
+  {
+    "id": "e21",
+    "departments": "Marketing",
+    "projectName": "AlphaDeo",
+    "amount": 3069,
+    "date": "2021-22-03",
+    "memberName": "Sam"
+  },
+  {
+    "id": "e22",
+    "departments": "Finance",
+    "projectName": "Alph-23",
+    "amount": 1292,
+    "date": "2021-01-02",
+    "memberName": "George"
+  },
+  {
+    "id": "e23",
+    "departments": "Finance",
+    "projectName": "Alph-23",
+    "amount": 1292,
+    "date": "2021-01-02",
+    "memberName": "George"
+  },
+  {
+    "id": "e24",
+    "departments": "Marketing",
+    "projectName": "Gaama",
+    "amount": 4639,
+    "date": "2021-01-02",
+    "memberName": "Sam"
+  },
+  {
+    "id": "e25",
+    "departments": "Marketing",
+    "projectName": "Alph-23",
+    "amount": 102,
+    "date": "2021-06-11",
+    "memberName": "Ann"
+  }
 ]

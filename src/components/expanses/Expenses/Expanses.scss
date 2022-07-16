@@ -1,18 +1,18 @@
-@import '../../../assets/scss/variables';
+@import "../../../assets/scss/variables";
 .tab {
-	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 3rem;
-	&__list {
-		display: flex;
-		gap: 1rem;
-		cursor: pointer;
-		font-size: 1.6rem;
-		font-weight: 500;
-	}
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+  &__list {
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
 
-	&__item {
-		border-bottom: 1px solid $color-black;
-		padding-bottom: 0.5rem;
-	}
+  &__item {
+    border-bottom: 1px solid $color-black;
+    padding-bottom: 0.5rem;
+  }
 }

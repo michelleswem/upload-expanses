@@ -1,1 +1,1 @@
-export { ExpansesSelect } from './ExpansesSelect';
+export { ExpansesSelect } from "./ExpansesSelect";

@@ -1,1 +1,1 @@
-export { ExpansesFilterTable } from './ExpansesFilterTable';
+export { ExpansesFilterTable } from "./ExpansesFilterTable";

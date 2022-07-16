@@ -1,25 +1,25 @@
-@import '../../../assets/scss/variables';
+@import "../../../assets/scss/variables";
 .expanses-filter {
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: flex-end;
-	margin-bottom: 3rem;
-	font-size: 2.4rem;
-	&__label {
-		margin-right: 2rem;
-	}
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  &__label {
+    margin-right: 2rem;
+  }
 
-	&__select {
-		font: inherit;
-		cursor: pointer;
-		padding: 0.5rem 3.5rem;
-		font-weight: bold;
-		border-radius: 3px;
-		background-color: $color-grey;
-		border: none;
-		&:focus {
-			outline: none;
-		}
-	}
+  &__select {
+    font: inherit;
+    cursor: pointer;
+    padding: 0.5rem 3.5rem;
+    font-weight: bold;
+    border-radius: 3px;
+    background-color: $color-grey;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
 }
