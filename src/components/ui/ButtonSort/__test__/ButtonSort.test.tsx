@@ -12,6 +12,10 @@ const sortButtonProps: SortButtonProps = {
 };
 
 describe('Button component', () => {
+  beforeEach(() => {
+    jest.clearAllMocks();
+  });
+
   test('should render a button', () => {
     const { container } = render(<ButtonSort {...sortButtonProps} />);
 
