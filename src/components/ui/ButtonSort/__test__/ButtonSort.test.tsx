@@ -81,4 +81,16 @@ describe('Button component', () => {
     const outputElement2 = screen.getByRole('button');
     expect(outputElement2).toHaveClass('arrow-down');
   });
+
+  test('should fire onClick callback', () => {
+    render(
+      <ButtonSort {...sortButtonProps} onClick={sortButtonProps.onClick} />,
+    );
+
+    const button = screen.getByRole('button');
+
+    userEvent.click(button);
+
+    expect(sortButtonProps.onClick).toHaveBeenCalledTimes(1);
+  });
 });
