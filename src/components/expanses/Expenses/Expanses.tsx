@@ -1,9 +1,9 @@
-import React, { Fragment } from "react";
-import { ExpansesSortTable } from "../ExpansesSortTable";
-import tab from "../../../mocks/tab.json";
-import { useTab } from "../../../hooks/useTab";
-import "./Expanses.scss";
-import { ExpansesFilterTable } from "../ExpansesFilterTable";
+import React, { Fragment } from 'react';
+import { ExpansesSortTable } from '../ExpansesSortTable';
+import tab from '../../../data/tab.json';
+import { useTab } from '../../../hooks/useTab';
+import './Expanses.scss';
+import { ExpansesFilterTable } from '../ExpansesFilterTable';
 
 type Tab = {
   id: string;
@@ -12,7 +12,7 @@ type Tab = {
 const tabData: Tab[] = tab;
 export const Expanses: React.FC = () => {
   const { activeTab: active, changeTabHandler: changeTabsHandler } = useTab(
-    tab[0].id
+    tab[0].id,
   );
   let content = <p>No Content</p>;
   if (active === tab[0].id) {
@@ -28,7 +28,7 @@ export const Expanses: React.FC = () => {
         <ul className="tab__list">
           {tabData.map((tab) => (
             <li
-              className={active === tab.id ? "tab__item" : ""}
+              className={active === tab.id ? 'tab__item' : ''}
               key={tab.id}
               id={tab.id}
               onClick={() => {

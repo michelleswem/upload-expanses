@@ -1,13 +1,10 @@
+@import '../../../assets/scss/variables';
 .btn {
   cursor: pointer;
   background-color: transparent;
   border: none;
   vertical-align: middle;
   margin-left: 1rem;
-
-  &:focus {
-    outline: none;
-  }
 }
 
 .arrow-down {

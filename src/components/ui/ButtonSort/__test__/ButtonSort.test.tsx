@@ -69,6 +69,8 @@ describe('Button component', () => {
         className="arrow-down"
         type="button"
         sortOrder="dec"
+        sortKey="departments"
+        columnKey="departments"
       />,
     );
 
