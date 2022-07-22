@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Button component should render a button 1`] = `
+exports[`Button component renders a button 1`] = `
 <div>
   <button
     class="btn arrow-up"

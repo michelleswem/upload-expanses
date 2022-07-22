@@ -16,13 +16,13 @@ describe('Button component', () => {
     jest.clearAllMocks();
   });
 
-  test('should render a button', () => {
+  test('renders a button', () => {
     const { container } = render(<ButtonSort {...sortButtonProps} />);
 
     expect(container).toMatchSnapshot();
   });
 
-  test('renders a button ', () => {
+  test('renders a button with this props ', () => {
     //ARRANGE
     render(<ButtonSort {...sortButtonProps} type="button" />);
 
@@ -49,6 +49,8 @@ describe('Button component', () => {
         {...sortButtonProps}
         className="arrow-up"
         type="button"
+        sortKey="departments"
+        columnKey="departments"
         sortOrder="asc"
       />,
     );
@@ -68,9 +70,9 @@ describe('Button component', () => {
         {...sortButtonProps}
         className="arrow-down"
         type="button"
-        sortOrder="dec"
         sortKey="departments"
         columnKey="departments"
+        sortOrder="dec"
       />,
     );
 
@@ -85,14 +87,16 @@ describe('Button component', () => {
   });
 
   test('should fire onClick callback', () => {
+    // ARRANGE
     render(
       <ButtonSort {...sortButtonProps} onClick={sortButtonProps.onClick} />,
     );
 
+    // ACT
     const button = screen.getByRole('button');
 
     userEvent.click(button);
-
+    // ASSERT
     expect(sortButtonProps.onClick).toHaveBeenCalledTimes(1);
   });
 });
