@@ -27,7 +27,6 @@ describe('Button component', () => {
     render(<ButtonSort {...sortButtonProps} type="button" />);
 
     // ACT
-    // DO NOTHING
 
     // ASSERT
     const btnElement = screen.getByRole('button');
